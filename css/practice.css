@@ -97,6 +97,7 @@ body {
 
 .template-card__preview-1 {
     background-image: url('../img/practic/casmitolog-alisa-mironova--prev.jpg');
+    max-width: 100%;
 }
 
 .template-card__content {
@@ -157,6 +158,7 @@ body {
 
 .fullscreen-preview__img {
   width: 70%;
+  max-width: 100%;
   object-fit: contain;
   border-radius: 1rem;
   box-shadow: 0 0 20px #0c1a2f;
