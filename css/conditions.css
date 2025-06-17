@@ -385,7 +385,7 @@ body {
 .typewriter-text {
   display: inline-block;
   text-transform: uppercase;
-  border-right: 2px solid #f1f5fa;
+  /* border-right: 2px solid #f1f5fa; */
   white-space: nowrap;
   overflow: hidden;
   vertical-align: bottom;
@@ -393,7 +393,7 @@ body {
   color: #f1f5fa;
 }
 
-.typing {
+/* .typing {
   animation: blinkCursor 0.8s step-end infinite;
 }
 
@@ -401,7 +401,7 @@ body {
   50% {
     border-color: transparent;
   }
-}
+} */
 
 .brand-inline-nav {
     display: none;

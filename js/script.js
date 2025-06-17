@@ -284,22 +284,26 @@ function showCloseMenu () {
   navList.classList.remove("active-menu-mobile");
   btnCloseMenu.classList.remove("active-btn-close-menu-mobile");
 
-  navList.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    if (e.target.classList.contains("nav__list-item-btn")) {
-
-        overlayMenu.classList.remove("active-overlay");
-        navList.classList.remove("active-menu-mobile");
-
-    }
-  });
 }
 
 window.addEventListener("popstate", function (event) {
   const block = event.state?.section || window.location.hash.replace('#', '') || 'conditions';
   openBlock(block, false); // без добавления в историю
 });
+
+  const navList = document.querySelector(".nav__list");
+
+  navList.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    if (e.target.classList.contains("nav__list-item-btn")) {
+        const overlayMenu = document.querySelector(".ul-wrapper");
+
+        overlayMenu.classList.remove("active-overlay");
+        navList.classList.remove("active-menu-mobile");
+
+    }
+  });
 
   
  
@@ -328,31 +332,31 @@ window.addEventListener("popstate", function (event) {
 //   type();
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const elAll = document.querySelectorAll(".typewriter");
-  const text = "  запуск для специалистов, выбор для клиентов.";
-  let j = 0;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const elAll = document.querySelectorAll(".typewriter");
+//   const text = "  запуск для специалистов, выбор для клиентов.";
+//   let j = 0;
 
-  elAll.forEach(el => {
-      function type() {
-    if (j <= text.length) {
-      el.textContent = text.substring(0, j++);
-      const delay = Math.random() * (190 - 120) + 100; // случайная задержка между 70–120мс
-      setTimeout(type, delay);
-    } else {
-      // подождать немного, прежде чем убрать курсор
-      setTimeout(() => {
-        el.classList.remove("typing");
-        el.style.borderRight = "none";
-      }, 500);
-    }
-  }
+//   elAll.forEach(el => {
+//       function type() {
+//     if (j <= text.length) {
+//       el.textContent = text.substring(0, j++);
+//       const delay = Math.random() * (190 - 120) + 100; // случайная задержка между 70–120мс
+//       setTimeout(type, delay);
+//     } else {
+//       // подождать немного, прежде чем убрать курсор
+//       setTimeout(() => {
+//         el.classList.remove("typing");
+//         el.style.borderRight = "none";
+//       }, 500);
+//     }
+//   }
 
-  type();
+//   type();
 
-  });
+//   });
 
-});
+// });
 
 
 
