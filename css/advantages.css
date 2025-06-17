@@ -1,0 +1,194 @@
+.advantages {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 20rem;
+    /* background: linear-gradient(to left, #3a71af, #3a71af, #EC5E23, #EC5E23, #111827, #111827); */
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
+.about__info-warranty, .about__info-advantages {
+    display: block;
+    font-size: 2rem;
+    max-width: max-content;
+    padding: 0.5rem;
+    background: linear-gradient(to left, #649ddf, #3a71af);
+    border-radius: 0.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.about__info-advantages {
+    background: linear-gradient(to left, #e9936e, #EC5E23);
+}
+
+.about__examples-title, .about__subtitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #1A1A1A;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__subtitle {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+
+.about__list {
+    list-style: none;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.about__list-item {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    color: #000000;
+}
+
+.item-advantag {
+  width: 32rem;
+  height: 35rem;
+  border-radius: 1.7rem;
+  background: #1c2433;
+  border: 1px solid #2d3c50;
+  padding: 2rem;
+  color: #e0e6f0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  overflow: hidden;
+}
+
+.item-advantag:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 3rem #3a71af66;
+}
+
+
+.item-advantag i {
+  text-align: center;
+  margin: 2rem auto;
+  display: block;
+  color: #EC5E23;
+  font-size: 5rem;
+}
+
+
+.item-advantag h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.item-advantag__img {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 0 4px #3a71af55);
+}
+
+
+.about__list-item span {
+    font-weight: 600;
+}
+
+.about__list-item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: linear-gradient(to top, #649ddf, #3a71af);
+    transform: rotate(45deg);
+    left: -2rem;
+    top: 0.7rem;
+}
+
+.item-advantag::before,
+.item-advantag::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.item-advantag::before {
+  background: linear-gradient(to bottom right, #111827 0%, #3a71af 100%);
+  transform: rotate(2deg);
+}
+
+.item-advantag::after {
+  background: linear-gradient(to top right, #1c2433, #2a3a52);
+  transform: rotate(-2deg);
+}
+
+
+
+.item-advantag:hover::before,
+.item-advantag:hover::after {
+  opacity: 0;
+}
+
+
+.about__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.about__warranty {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about__warranty-btn, .about__advantages-btn {
+    max-width: max-content;
+    max-height: max-content;
+    padding: 1rem;
+    background: linear-gradient(to top, #649ddf, #3a71af);
+    color: #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+    box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.12),  
+    0 1px 0 rgba(255, 255, 255, 0.4) inset; 
+}
+
+.about__advantages-btn {
+    background: linear-gradient(to left, #e9936e, #EC5E23);
+}
+
+.about__warranty-btn:hover, .about__advantages-btn:hover {
+    background: linear-gradient(to top,#3a71af, #649ddf);
+    box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.18),
+    0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+.about__advantages-btn:hover {
+    background: linear-gradient(to left, #EC5E23, #e9936e);
+}
+
+

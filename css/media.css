@@ -1,0 +1,862 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.warranty__subtitle {
+    font-weight: 400 !important;
+    font-size: 2rem !important;
+    color: #000000 !important;
+}
+
+.prices__title {
+    font-weight: 700 !important;
+}
+
+.contacts__title {
+    font-weight: 700 !important;
+    
+}
+@media (max-width: 1724px) { 
+    .conditions__intro-descr {
+        width: 100%;
+    }
+
+    .about__title {
+
+      font-size: 6rem !important;
+
+    }
+
+    .brand-inline {
+      font-size: 4rem;
+    }
+
+    .about__proposal {
+      padding: 5rem !important;
+    }
+    .about__proposal-left-plans-btn {
+      z-index: 5;
+    }
+    .about__offer-subtitle-warning {
+      z-index: 5;
+    }
+
+    .about__benefits {
+      justify-content: center;
+      margin-bottom: 2.5rem !important;
+    }
+
+    .advantages {
+      padding: 5rem 10rem !important;
+}
+  }
+
+@media (max-width: 1644px){
+
+  .brand-inline__proposal {
+    bottom: 5.5rem !important;
+    right: -12rem !important;
+  }
+
+  .about__proposal {
+    padding: 5rem !important;
+  }
+
+}
+
+
+
+@media (max-width: 1612px) { 
+    .conditions__intro-descr {
+        width: 100%;
+    }
+  }
+
+
+
+@media (max-width: 1529px) { 
+    .conditions__intro-descr {
+        width: 100%;
+    }
+
+    .conditions__title {
+      font-size: 2rem;
+    }
+
+    .conditions__container {
+      width: 90%;
+    }
+
+    .promo {
+      grid-template-columns: 18% 82%;
+    }
+
+    .about {
+      padding: 5rem 0rem !important;
+    }
+
+    .nav {
+      align-items: flex-start;
+      padding: 10rem 2.5rem;
+    }
+
+    .about__title {
+
+      font-size: 5rem !important;
+
+    }
+
+    .benefit-item {
+      padding: 5rem 2.5rem !important;
+    }
+
+    .benefit-item i {
+      font-size: 5rem !important;
+    }
+
+    .advantages {
+      padding: 5rem 0rem !important;
+    }
+
+    .warranty {
+      width: 90% !important;
+    }
+
+  }
+
+@media (max-width: 1444px) {
+
+  .about__proposal {
+    width: 100% !important;
+  }
+
+
+
+}
+
+@media (max-width: 1356px) {
+
+    .about__title {
+
+      font-size: 4.5rem !important;
+
+    }
+
+
+    .about {
+      padding: 0rem 0rem 1rem 0rem !important;
+    }
+
+
+
+}
+
+@media (max-width: 1293px) { 
+    .conditions__container {
+      width: 100%;
+    }
+
+    .conditions {
+      padding: 5rem 2.5rem;
+    }
+
+    .nav {
+      padding: 7rem 1.5rem;
+    }
+
+    .advantages {
+      padding: 2.5rem 0rem !important;
+    }
+
+    .about__list {
+      padding: 0 1rem !important;
+    }
+
+    .item-advantag {
+      width: 27rem !important;
+      height: 30rem !important;
+    }
+
+
+    .about__list-item {
+      font-size: 1.6rem !important;
+    }
+
+    .item-advantag h3 {
+      font-size: 2rem !important;
+    }
+
+    .item-advantag i {
+      font-size: 4rem !important;
+    }
+
+    .practice__descr {
+      width: 100% !important;
+    }
+
+    .warranty {
+      width: 95% !important;
+    }
+
+
+  }
+
+@media (max-width: 1214px) { 
+  .typewriter-text {
+    font-size: 2.5rem;
+}
+
+  .benefit-item {
+    font-size: 2rem !important;
+  }
+
+
+  }
+
+@media (max-width: 1155px) { 
+
+  .about__proposal {
+    padding: 1.5rem 1.5rem 5rem 1.5rem !important;
+  }
+    .card-practice {
+        width: 45% !important;
+    }
+  }
+
+  @media (max-width: 1101px) { 
+
+    .promo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .conditions {
+      padding: 2.5rem;
+    }
+
+    .nav-container {
+      height: max-content !important;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 0 1rem 7rem;
+      justify-content: space-between;
+      position: relative
+    }
+
+    .conditions__intro--preview {
+      display: none;
+    }
+
+    .nav__logo {
+      display: none;
+    }
+
+    .conditions__intro-header {
+      display: block;
+      padding: 1rem;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      height: 4rem;
+      position: relative;
+      text-align: center;
+    }
+
+    .brand-inline-nav {
+      display: block;
+    }
+
+
+    .brand-inline {
+      font-size: 2.5rem;
+      text-decoration: none;
+    }
+
+    .typewriter-text {
+      font-size: 1.6rem;
+    }
+
+    .logo-glow {
+      margin: 0;
+    }
+
+    .social {
+      margin: 0;
+    }
+
+    .nav__burger {
+        display: flex !important;
+    }
+
+    .prices__container {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .prices__hourly {
+      min-width: 100%;
+    }
+
+    .prices__social {
+      margin: 0 auto;
+    }
+
+    .prices__payment {
+      min-width: 100%;
+      padding: 2rem !important;
+    }
+
+    .prices__payment-img {
+      display: none;
+  }
+
+  .contacts__block {
+    width: 100% !important;
+
+
+  }
+
+  
+    .about__descr-me {
+        max-width: 100% !important;
+        margin: 0;
+    }
+
+
+    .ul-wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(187, 201, 218, 0.5);
+        z-index: 1500;
+        top: 0;
+        left: -100%;
+      }
+
+      
+
+  
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #040b14;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 1500;
+        padding: 2rem 5rem;
+        transition: left 0.5s ease;
+        margin: 0;
+    }
+
+    
+    .active-menu-mobile {
+        left: 0;
+        transition: left 0.5s ease;
+    }
+
+    .active-btn-close-menu-mobile {
+        left: 60%;
+        transition: left 0.5s ease;
+    } 
+
+
+    .nav__list-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .nav__list-item-btn {
+        padding: 1rem 5rem 1rem 1rem;
+
+    }
+
+    .nav__burger-line {
+      display: block;
+      width: 100%;
+      height: 0.5rem;
+    }
+  
+    .nav__burger-line {
+      margin-bottom: 0.7rem;
+    }
+    .nav__burger-line:last-child {
+      margin-bottom: 0;
+    }
+
+    .active-overlay {
+        left: 0;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .conditions__social {
+      margin: 0 auto;
+    }
+
+
+    .brand-inline__proposal {
+      bottom: 4rem !important;
+      right: -10.5rem !important;
+    }
+
+
+    .about__proposal-title-and-descr {
+
+      padding: 7rem 5rem !important;
+      margin-bottom: 2.5rem !important;
+
+
+    }
+
+    .about__benefits {
+      gap: 2.5rem !important;
+      margin-bottom: 0rem !important;
+    }
+
+    .about__social, .price__social {
+      margin: 0 auto !important;
+    }
+
+    .warranty__social {
+      margin: 0 auto;
+    }
+
+
+
+      
+
+  }
+
+  @media (max-width: 1084px) {
+
+    .about__benefits {
+      margin-bottom: 2.5rem !important;
+    }
+
+  }
+
+@media (max-width: 995px) {
+
+
+
+    .typewriter-text {
+      font-size: 1.2rem;
+    }
+
+
+    
+
+
+  }
+
+  @media (max-width: 809px) { 
+
+    .brand-inline-nav {
+      margin-right: 2rem;
+    }
+
+   .conditions__intro {
+    display: none;
+   }
+
+    .prices__example { 
+      width: 100% !important;
+
+    }
+
+    .about__descr-me {
+      text-align: left;
+  }
+
+  .contacts__social {
+    background: none;
+    box-shadow: none;
+  }
+
+  .contacts__social .contacts__social-vk,
+  .contacts__social .contacts__social-tg {
+    padding: 0.5rem;
+    background: #ffffff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  }
+
+  .contacts__social .contacts__social-vk:hover,
+  .contacts__social .contacts__social-tg:hover {
+    background: #ffffff;
+    transform: translateY(0px);
+  }
+
+   .contacts__social .contacts__social-vk i {
+      font-size: 3rem;
+      color: #3a71af;
+    }
+
+    .contacts__social .contacts__social-tg i {
+      font-size: 3rem;
+      color: #149ddd;
+    }
+
+
+  }
+
+
+
+  @media (max-width: 768px) { 
+
+    html {
+      font-size: 52.5%;
+    }
+
+
+
+    .item-conditions:hover {
+      box-shadow: none;
+      transform: scale(1);
+    }
+
+    .item-conditions::before {
+      opacity: 1;
+}
+
+
+
+  }
+
+  
+  @media (max-width: 616px) { 
+
+    .item-conditions {
+      width: 100%;
+      min-height: 20rem;
+    }
+
+    .item-conditions h3 {
+      font-size: 2.2rem;
+     }
+
+    .item-conditions p {
+      font-size: 2rem;
+      text-align: center;
+      
+    }
+
+  }
+
+  @media (max-width: 601px) { 
+    .card-practice {
+        width: 100% !important;
+    }
+  }
+
+  @media (max-width: 559px) { 
+    html {
+        font-size: 45.5%;
+    }
+
+    .about__proposal {
+      padding: 1.5rem 0.5rem 5rem 0.5rem !important;
+    }
+
+    .about__proposal-title-and-descr {
+
+      padding: 5rem 2rem !important;
+
+
+    }
+
+    .variants-item {
+      width: 95% !important;
+    }
+
+    .variants-item__list p {
+      font-size: 1.8rem !important;
+    }
+
+    .prices__benefits {
+      width: 95% !important;
+    }
+    .prices-benefit-item {
+      font-size: 1.8rem !important;
+    }
+  }
+
+    @media (max-width: 527px) {
+
+ 
+
+    .benefit-item {
+      font-size: 1.6rem !important;
+      padding: 2.5rem 1.5rem !important;
+      border-radius: 2.5rem !important;
+
+    }
+
+    .about__proposal-left-plans-btn {
+
+      width: 90% !important;
+      margin: 0 auto;
+      font-size: 2.5rem !important;
+
+    }
+
+        .practice__title {
+      font-size: 3rem !important;
+    }
+
+    .practice__descr {
+      font-size: 1.8rem !important;
+    }
+
+
+
+    }
+  
+    @media (max-width: 496px) { 
+    .promo__discount-cont-second {
+      display: block !important;
+    }
+
+    .promo__discount-cont {
+      display: none !important;
+    }
+
+        .about__title {
+        font-size: 4rem !important;
+    }
+
+    .about__descr-me {
+      font-size: 2.2rem !important;
+    }
+  }
+
+
+
+
+  @media (max-width: 460px) { 
+
+
+
+
+
+    .warranty__title {
+      font-size: 3.3rem !important;
+    }
+    
+    .prices__title {
+        font-size: 3rem !important;
+    }
+
+    .about__title {
+        font-size: 3.5rem !important;
+    }
+
+    .about__descr-me {
+      font-size: 1.8rem !important;
+    }
+
+    .about__benefits {
+      margin-bottom: 0rem !important;
+    }
+
+    .item-advantag {
+      width: 95% !important;
+      height: 27rem !important;
+    }
+
+
+    .about__list-item {
+      font-size: 1.8rem !important;
+    }
+
+    .item-advantag h3 {
+      font-size: 2.2rem !important;
+    }
+
+    .item-advantag i {
+      font-size: 5rem !important;
+    }
+    
+    .prices-benefit-item {
+      font-size: 1.6rem !important;
+    }
+  }
+
+  @media (max-width: 432px) { 
+    .contacts__list-item a {
+      font-size: 1.7rem;
+    }
+
+    .about__descr-me {
+      text-align: left;
+  }
+
+}
+
+    @media (max-width: 398px) { 
+    .about__title {
+        font-size: 3rem !important;
+    }
+
+  }
+
+  @media (max-width: 390px) { 
+    .nav__list {
+        padding: 2rem 1rem;
+    }
+
+    html {
+      font-size: 42.5%;
+  }
+
+    .item-advantag {
+      width: 95% !important;
+      height: 30rem !important;
+    }
+
+  }
+
+  @media (max-width: 368px) { 
+    .contacts__wrapper {
+      padding: 1rem !important;
+    }
+
+    .contacts__list {
+      padding-left: 1rem !important;
+    }
+    .contacts__list-item {
+      font-size: 1.7rem !important;
+    }
+
+    
+    .about {
+      padding: 1rem !important;
+    }
+
+    .warranty {
+      padding: 1rem !important;
+    }
+
+    .prices {
+      padding: 1rem !important;
+    }
+    .prices__examples {
+      padding: 1rem !important;
+    }
+  }
+
+  @media (max-width: 362px) { 
+
+
+    .logo__main {
+      font-size: 2.5rem;
+    }
+
+    .about__subtitle {
+      font-size: 2.5rem !important;
+    }
+  }
+
+  @media (max-width: 354px) { 
+    .warranty__subtitle {
+        font-size: 2.2rem !important;
+    }
+
+    .warranty__title {
+      font-size: 2.8rem !important;
+    }
+
+    .brand-inline__proposal {
+      bottom: 3.5rem !important;
+      right: -11rem !important;
+    }
+  }
+
+  @media (max-width: 337px) { 
+    .logo__main {
+        font-size: 2.7rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo__main {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media (max-width: 368px) { 
+    .contacts__wrapper {
+      padding: 0.5rem !important;
+    }
+
+    .contacts__list {
+      padding-left: 0.5rem !important;
+    }
+
+    .about {
+      padding: 0.5rem !important;
+    }
+
+    .warranty {
+      padding: 0.5rem !important;
+    }
+
+    .prices {
+      padding: 0.5rem !important;
+    }
+    .prices__examples {
+      padding: 0.5rem !important;
+    }
+  }
+
+  @media (max-width: 334px) {
+    .about__title {
+      font-size: 2.7rem !important;
+    }
+
+    .about__proposal-left-plans-btn {
+      font-size: 2rem !important;
+    }
+
+    .about__offer-subtitle-warning {
+      font-size: 2rem !important;
+      text-align: center !important;
+    }
+
+    .variants-item__list p {
+      font-size: 1.7rem !important;
+    }
+  }
+
+  @media (max-width: 326px) { 
+    .warranty__subtitle {
+        font-size: 2.2rem !important;
+    }
+
+    .warranty__title {
+      font-size: 2.8rem !important;
+    }
+    .logo__main {
+      font-size: 2rem;
+    }
+
+    html {
+      font-size: 40.5%;
+  }
+  }

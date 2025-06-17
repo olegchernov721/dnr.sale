@@ -1,0 +1,411 @@
+.conditions {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem;
+    /* background: linear-gradient(to left, #3a71af, #3a71af, #EC5E23, #EC5E23, #111827, #111827); */
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.conditions__title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.conditions__subtitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.conditions__container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.item-conditions i {
+  font-size: 6rem;
+  color: #EC5E23;
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+/* ---------------------------- */
+.conditions__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+
+.item-conditions {
+  width: 32rem;
+  min-height: 35rem;
+  border-radius: 1.7rem;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(to top right, #20352f, #2b4038); /* тёмно-зелёный фон */
+  color: #e5f8f0;
+  position: relative;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.item-conditions:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2rem 4rem rgba(76, 221, 168, 0.25); /* мягкая зелёная подсветка */
+}
+
+.item-conditions::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: radial-gradient(circle at bottom right, #2af59855, #00c9a755, transparent 90%);
+  z-index: -1;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.item-conditions:hover::before {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.item-conditions i {
+  font-size: 4rem;
+  color: #23c453; /* тёпло-зелёная иконка */
+  margin-bottom: 1.5rem;
+}
+
+.item-conditions h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.item-conditions p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #d7f3e9;
+  font-family: sans-serif;
+}
+
+
+
+
+/* Карточки про отказ от сотрудничества\ */
+
+
+.item-conditions--refuse {
+  background: linear-gradient(to top right, #2e2b2b, #3a2f2f);
+  border-radius: 1.7rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f5e9e9;
+}
+
+.item-conditions--refuse:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2rem 4rem rgba(255, 72, 72, 0.25);
+}
+
+.item-conditions--refuse::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: radial-gradient(circle at bottom right, #ff5e5e88, #7e454577, transparent 90%);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.item-conditions--refuse:hover::before {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.item-conditions--refuse i {
+  font-size: 4rem;
+  color: #ff4c4c; /* яркий красноватый акцент */
+  margin-bottom: 1.5rem;
+}
+
+.item-conditions--refuse h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.item-conditions--refuse p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: #f0dada;
+}
+
+
+
+
+
+
+.conditions__descr-split {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.conditions__descr-card {
+  background: #111827;
+  border-radius: 1rem;
+  padding: 3rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #dfe6f1;
+  border-left: 0.4rem solid #3a71af;
+}
+
+.conditions__descr-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.conditions__descr-executors {
+  background: linear-gradient(to right, #1c2433, #2a3a52);
+  border-left-color: #3a71af;
+}
+
+.conditions__descr-clients {
+  background: linear-gradient(to right, #2c2c2c, #3a3a3a);
+  border-left-color: #EC5E23;
+}
+
+.conditions__descr-warning {
+  margin: 0;
+  padding: 2rem;
+  background: linear-gradient(to right, #2e2e36, #3c3c44); /* Более холодный, нейтральный фон */
+  border-left: 0.4rem solid #f5a623; /* Мягкий тёплый жёлто-оранжевый */
+  color: #f0f0f0;
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  border-radius: 0.7rem;
+}
+
+
+
+
+
+
+.brand-platform {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.3px;
+}
+
+.brand-platform__orange {
+  color: #EC5E23;
+}
+
+.brand-platform__blue {
+  color: #3a71af;
+}
+
+.conditions__purpose {
+  background: linear-gradient(to right, #1f2d3d, #27384d);
+  padding: 2.5rem 3rem;
+  border-left: 0.5rem solid #47d79b; /* приятный зелёный акцент */
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #f1f5fa;
+  transition: all 0.3s ease;
+}
+
+.conditions__purpose-descr {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.conditions__purpose-subdescr {
+  color: #c7f2dd;
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+
+.conditions__intro--preview {
+  background: linear-gradient(135deg,
+    #040b14,
+    #1d5494,
+    #040b14,
+    #1d528f,
+    #040b14,
+    #1d5494,
+    #040b14,
+    #1d528f,
+    #040b14
+  );
+  background-size: 400% 400%;
+  animation: glowingBackground 60s ease-in-out infinite;
+
+  border-radius: 1.2rem;
+  padding: 4rem 5rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  color: #fff;
+  box-shadow: 0 0 40px rgba(236, 94, 35, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3px);
+  position: relative;
+  overflow: hidden;
+
+}
+
+@keyframes glowingBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+.conditions__intro-descr {
+  font-size: 5rem;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 6rem;
+}
+
+/* Стили для логотипа в предложении, с белой плашкой */
+.brand-inline {
+  display: inline-block;
+  background: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  font-size: 4.6rem;
+  line-height: 1;
+  box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.3), /* мягкий белый контур */
+    0 6px 12px rgba(0, 0, 0, 0.15);     /* лёгкая тень для отделения */
+  backdrop-filter: blur(3px);
+  position: relative;
+  z-index: 2;
+}
+
+.brand-inline-nav {
+  background: linear-gradient(135deg,
+    #040b14,
+    #1d5494,
+    #040b14,
+    #1d528f,
+    #040b14
+  );
+
+
+
+  background-size: 400% 400%;
+  animation: glowingBackground 14s ease-in-out infinite;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* Цвета частей логотипа */
+.brand-inline .logo__dnr {
+  color: #EC5E23;
+}
+
+.brand-inline .logo__dot {
+  color: #47d79b;
+}
+
+.brand-inline .logo__sale {
+  color: #3a71af;
+}
+
+.typewriter-text {
+  display: inline-block;
+  text-transform: uppercase;
+  border-right: 2px solid #f1f5fa;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: bottom;
+  font-size: 3rem;
+  color: #f1f5fa;
+}
+
+.typing {
+  animation: blinkCursor 0.8s step-end infinite;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.brand-inline-nav {
+    display: none;
+}
+
+
+

@@ -1,0 +1,307 @@
+@charset "UTF-8";
+.main__practice {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #040b14;
+    padding: 3rem 2rem;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+.practice__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+
+}
+
+.practice__descr {
+    font-size: 2rem;
+    width: 60%;
+    margin-bottom: 3rem;
+    /* font-family: sans-serif; */
+}
+
+.wrapper-cards-practice {
+    width: 100%;
+    /* background-color: #ffffff; */
+    min-height: max-content;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    /* border: 1px solid #e2dbcc; */
+}
+
+/* .template-card {
+    width: 40rem;
+    height: 30rem;
+    color: rgb(0, 0, 0);
+    padding: 1.5rem 1.5rem 7.5rem 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+    border: 0.2rem solid #3a71af55;
+    color: #ffffff;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    cursor: pointer;
+}
+
+.template-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 3rem #3a71af66;
+} */
+
+.template-card {
+    width: 40rem;
+  background-color: #0f172a;
+  border: 1px solid #233048;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #0c1a2f;
+}
+
+.template-card__note {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 1rem;
+  background: rgba(245, 245, 245, 0.6);
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #695aa4;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+
+.template-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.template-card__preview {
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid #1e293b;
+}
+
+.template-card__preview-1 {
+    background-image: url('../img/practic/casmitolog-alisa-mironova--prev.jpg');
+}
+
+.template-card__content {
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.template-card__title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.template-card__desc {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+.template-card__button {
+  background-color: #EC5E23;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.template-card__button:hover {
+  background-color: #cf4e1c;
+}
+
+/* полноэкранный просмотр */
+
+.fullscreen-preview {
+  position: absolute;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: max-content;
+  background-color: rgba(15, 23, 42, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.fullscreen-preview-active {
+    display: flex;
+}
+
+.fullscreen-preview-deactive {
+    display: none;
+}
+
+.fullscreen-preview__img {
+  width: 70%;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #0c1a2f;
+}
+
+.fullscreen-preview__close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.card-practice__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.card-practice__descr {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-practice__list {
+    list-style: none;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.card-practice__list-item {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+}
+
+.card-practice__list-item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: linear-gradient(to top, #649ddf, #3a71af);
+    transform: rotate(45deg);
+    left: -2rem;
+    top: 0.7rem;
+}
+  
+
+.card-practice__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.card-practice__link {
+    position: absolute;
+    left: 1.5rem;
+    bottom: 3rem;
+}
+
+.card-practice__link-task-github {
+    font-size: 2rem;
+    color: #818c98;
+    font-weight: 700;
+}
+
+.card-practice__note {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.card-practice__now {
+    background-color: #818c98;
+    padding: 1.5rem;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.card-practice::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+.card-practice::-webkit-scrollbar-track {
+    padding-left: 1rem;
+    background: white; /* Цвет фона дорожки */
+    border-radius: 4px;
+}
+
+.card-practice::-webkit-scrollbar-thumb {
+    background: #8e8cf1; /* Цвет ползунка */
+    border-radius: 4px;
+}
+
+.card-practice::-webkit-scrollbar-thumb:hover {
+    background: #9c9be6; /* Цвет при наведении */
+}
+
+
+
+.practice__subdescr {
+  position: relative;
+  padding: 3rem 4rem;
+  border-radius: 1.6rem;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 auto;
+  background: linear-gradient(to top right, #20352f, #2b4038); 
+  color: #e5f8f0;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.35);
+  margin-bottom: 2rem;
+}
+
+.practice__subdescr::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  background: radial-gradient(circle at bottom right, #2af59855, #00c9a755, transparent 90%);
+  z-index: 1;
+  filter: blur(5rem);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+
+
+
+.practice__subdescr:hover::before {
+  background: radial-gradient(circle at top left, #2af59855, #00c9a755, transparent 90%);
+}
+
+.practice__social {
+  margin: 0 auto;
+}
+

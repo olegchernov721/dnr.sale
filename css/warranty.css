@@ -1,0 +1,170 @@
+.warranty {
+    width: 70%;
+    background-color: #040b14; /* тёмно-синий фон */
+    min-height: 100vh;
+    padding: 2rem;
+    color: #e2e8f0; /* светлый текст */
+    margin: 0 auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.warranty__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.warranty__intro,
+.warranty__subtitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #cbd5e1 !important;
+}
+
+.warranty__subtitle {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #cbd5e1;
+}
+
+.warranty__subtitle strong {
+    color: #ffffff;
+}
+
+.warranty__conditions {
+    list-style: none;
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.warranty__conditions li {
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+    position: relative;
+    color: #e2e8f0;
+}
+
+.warranty__conditions li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: linear-gradient(to top, #3a71af, #74ebd5);
+    transform: rotate(45deg);
+    left: -2rem;
+    top: 0.7rem;
+}
+
+/* FAQ заголовок */
+.warranty__faq-title {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+/* Элемент списка FAQ */
+.warranty__faq-item {
+    margin-bottom: 2.5rem;
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 2.3rem;
+    border: 1px solid #3a71af55;
+    color: #ffffff;
+    transition: background 0.3s ease;
+}
+
+.warranty__faq-item:hover {
+    background: #253349;
+}
+
+.warranty__faq-item i {
+    color: #74ebd5;
+    transition: transform 0.4s ease;
+}
+
+.warranty__faq-item-i-show {
+    transform: rotate(-90deg);
+}
+
+/* Ответ внутри FAQ */
+.warranty__answer {
+    font-size: 1.8rem;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 2rem;
+    background-color: #040b14;
+    border-radius: 0 0 1rem 1rem;
+    color: #e2e8f0;
+    margin-bottom: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.warranty__answer-open {
+    max-height: 200rem;
+    padding: 2rem;
+}
+
+.warranty__answer ul {
+    padding: 1.5rem;
+}
+
+.warranty__answer ul li {
+    margin-bottom: 1.5rem;
+}
+
+/* Соц. блок внутри ответа */
+.warranty__faq-item-social {
+    background-color: #1e293b;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    margin-top: 2rem;
+}
+
+.warranty__faq-item-social-title {
+    margin-right: 1.5rem;
+    color: #cbd5e1;
+}
+
+.warranty__faq-item-social i {
+    color: #ffffff !important;
+    font-size: 2rem;
+}
+
+.warranty__faq-item-social i:hover {
+    color: #74ebd5 !important;
+}
+
+/* Документация (если есть) */
+.warranty__doc-download {
+    margin-bottom: 1.5rem;
+}
+
+.warranty__doc-link {
+    font-size: 2rem;
+    color: #74ebd5;
+    text-decoration: underline;
+}
+
+.warranty__doc-link:hover {
+    color: #8fd3f4;
+}
+
+.warranty__answer-title {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+
+
+

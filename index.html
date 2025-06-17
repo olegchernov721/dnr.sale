@@ -1,161 +1,1103 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Менеджер задач</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script defer src="https://kit.fontawesome.com/08db79b8a3.js" crossorigin="anonymous"></script>
-  <script defer src="js/script.js"></script>
+  <head>
+    <!-- базовая мета-информация -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <!-- ✅ Разрешаем кэширование -->
+    <!-- Эти теги можно просто не указывать, чтобы браузеры использовали своё кэширование -->
+    <!-- Но если хочешь явно — можно так: -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <meta http-equiv="Expires" content="Wed, 21 Oct 2030 07:28:00 GMT">
 
-  <!-- <link rel="stylesheet" href="css/slick.css"> -->
-</head>
-<body>
+    <!-- ❌ Запрещаем поисковикам индексировать и сохранять копии -->
 
-  <!-- Дашборд -->
-  <div class="container">
-    <div class="dashboard__time">
-      <div class="dashboard__time-today">13.02.2025</div>
-      <div class="dashboard__time-sity">Горловка, Россия</div>
-    </div>
-    
+    <link rel="canonical" href="https://dnr.sale">
+    <meta name="robots" content="index, follow, noarchive">
+
+  
+    <title>DNR.SALE — запуск для специалистов, выбор для покупателей</title>
+    <meta name="description" content="Бесплатный лендинг, хостинг и постоянная поддержка для старта специалистам. Клиентам — качественный подбор проверенных исполнителей.">
 
 
-    <div class="dashboard__slider">
-      <div class="slide slide--1">
-        <div class="slide__tasks-today slide__tasks-today--1">
-          <h3>Сегодняшние задачи:</h3>
-          <ul class="dashboard__tasks-today-list--1">
-              <li class="dashboard__tasks-today-list-link">Нет задач</li>
-          </ul>
-        </div>
-
-        <div class="dashboard__weather weather--1">
-          <!-- <div class="weather__box"> 
-            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
-            <h2 class="weather__title">Погода сейчас</h2>
-            <div class="weather__temp">Температура воздуха: °C: -5</div>
-            <div class="weather__feeling">По ощущению: °C: -12</div>
-            <div class="weather__cloud">Облочность: 95%</div>
-            <div class="weather__wind">Ветер: 5 м/сек</div>
-          </div> -->
-            
-            
-          
-      </div>
-
-      </div>
-      <div class="slide slide--2">
-        <div class="slide__tasks-today slide__tasks-today--2">
-          <h3>Сегодняшние задачи:</h3>
-          <ul class="dashboard__tasks-today-list--2">
-              <li class="dashboard__tasks-today-list-link">Нет задач</li>
-          </ul>
-        </div>
-
-        <div class="dashboard__weather weather--2">
-          <!-- <div class="weather__box"> 
-            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
-            <h2 class="weather__title">Погода сейчас</h2>
-            <div class="weather__temp">Температура воздуха: °C: -5</div>
-            <div class="weather__feeling">По ощущению: °C: -12</div>
-            <div class="weather__cloud">Облочность: 95%</div>
-            <div class="weather__wind">Ветер: 5 м/сек</div>
-          </div> -->
-            
-            
-          
-      </div>
-      </div>
-      <div class="slide slide--3">
-        <div class="slide__tasks-today slide__tasks-today--3">
-          <h3>Сегодняшние задачи:</h3>
-          <ul class="dashboard__tasks-today-list--3">
-              <li class="dashboard__tasks-today-list-link">Нет задач</li>
-          </ul>
-        </div>
-
-        <div class="dashboard__weather weather--3">
-          <!-- <div class="weather__box"> 
-            <img id="weather__icon" src="img/weather-forecasting.png" alt="Погода">
-            <h2 class="weather__title">Погода сейчас</h2>
-            <div class="weather__temp">Температура воздуха: °C: -5</div>
-            <div class="weather__feeling">По ощущению: °C: -12</div>
-            <div class="weather__cloud">Облочность: 95%</div>
-            <div class="weather__wind">Ветер: 5 м/сек</div>
-          </div> -->
-            
-            
-          
-      </div>
-      </div>
-
-      <div class="sliders-btns">
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-      </div>
-    </div>
-
-</div>
   
 
-  <!-- Менеджер задач --> 
-   <div class="container">
-    <div class="task-manager-form">
-      <h2 class="task-manager-form__title">Менеджер задач</h2>
-      <div class="task-manager-form__input">
-        <div class="task-manager-form__input-title">
-          <label for="title-task">Заголовок: </label>
-          <input type="text" id="title-task" class="task-manager-form__input-text" placeholder="Придумайте заголовок" value="Тренировка в субботу">
+
+  
+    <!-- favicon-набор -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/favicon-180.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/icons/favicon-512.png">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+
+  
+    <!-- Open Graph / соцсети -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://dnr.sale/">
+    <meta property="og:title" content="DNR.SALE — запуск для специалистов, выбор для покупателей">
+    <meta property="og:description" content="Бесплатный лендинг, хостинг и поддержка для специалистов. Надёжный подбор исполнителей для клиентов.">
+    <meta property="og:image" content="https://dnr.sale/img/preview.png">
+    <meta property="og:site_name" content="DNR.SALE">
+
+  
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DNR.SALE — запуск для специалистов, выбор для покупателей">
+    <meta name="twitter:description" content="Бесплатный лендинг, хостинг и поддержка для специалистов. Надёжный подбор исполнителей для клиентов.">
+    <meta name="twitter:image" content="https://dnr.sale/img/preview.png">
+
+  
+    <!-- PWA-цвет адресной строки -->
+    <meta name="theme-color" content="#2b1a13">
+  
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+    <!-- основные стили -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/conditions.css">
+    <link rel="stylesheet" href="css/media.css">
+  
+    <!-- иконки/скрипты -->
+    <script defer src="https://kit.fontawesome.com/08db79b8a3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/validator@13.9.0/validator.min.js"></script>
+    <script defer src="js/script.js?v=28"></script>
+  </head>
+  
+<body>
+
+ <section class="promo">
+
+<div class="nav-container">
+      <nav class="promo__nav nav"> 
+      <button class="nav__burger" aria-label="Открыть меню">
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+        <span class="nav__burger-line"></span>
+      </button>
+
+      <div class="nav__logo logo">
+        <a href="#" class="logo__main logo-glow">
+          <span class="logo__dnr">DNR</span><span class="logo__dot">.</span><span class="logo__sale">SALE</span>
+        </a>
+      </div>
+
+        <a href="#" class="brand-inline brand-inline-nav">
+          <span class="logo__dnr">DNR</span><span class="logo__dot">.</span><span class="logo__sale">SALE</span>
+        </a>
+
+        <div class="conditions__intro conditions__intro-header conditions__intro--preview hidden">
+
+      <p class="conditions__intro-descr">
+
+        <span class="typewriter-text typing typewriter"></span>
+      </p>
+
+
+      </div>
+
+
+      
+      <div class="ul-wrapper">
+        <button class="menu-mobile-close"><i class="fa-solid fa-rectangle-xmark"></i></button>
+
+          <ul class="nav__list">
+
+            <li class="nav__list-item">
+              <button class="nav__list-item-btn nav__list-item-btn-active" data-block="conditions">Проект и условия</button>
+            </li>
+
+            <li class="nav__list-item">
+              <button class="nav__list-item-btn" data-block="about">Для специалистов</button>
+            </li>
+
+            <li class="nav__list-item">
+              <button class="nav__list-item-btn" data-block="advantages">Выгода специалистам</button>
+            </li>
+
+            <li class="nav__list-item">
+              <button class="nav__list-item-btn" data-block="practice">Шаблоны для лендинга</button>
+            </li>
+
+            <li class="nav__list-item">
+              <button class="nav__list-item-btn" data-block="prices">Форматы размещения</button>
+            </li>
+
+            <li class="nav__list-item">
+              <button class="nav__list-item-btn" data-block="warranty">Гарантия и вопросы</button>
+            </li>
+
+            <li class="nav__list-item">
+              <button class="nav__list-item-btn" data-block="contacts">Контакты</button>
+            </li>
+
+          </ul>
+
+      </div>
+      
+
+      <div class="contacts__social social">
+        <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk"><i class="fa-brands fa-vk"></i></a>
+        <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </nav>
+
+</div>
+
+    
+    
+    <!-- <div class="promo__info">
+      <div class="marquee">
+        <div class="promo__info-close"><button class="promo__info-close-btn"><i class="fa-solid fa-square-xmark" data-type-btn="runText"></i></button></div>
+      </div>
+
+      <div class="promo__discount">
+        <div class="promo__discount-cont">Будь первым! И получи скидку <span>-20%!</span></div>
+        <div class="promo__discount-cont-second">Скидка 20%!</div>
+        <button class="promo__discount-cont-btn">Узнать подробнее</button>
+        <div class="promo__info-close"><button class="promo__info-close-btn"><i class="fa-solid fa-square-xmark" data-type-btn="discountText"></i></button></div>
+      </div>
+    </div> -->
+
+    <!-- Контейнер с блоками -->
+    <div class="promo__main main">
+
+
+      <!-- Блок обо мне -->
+      <div class="main__block main__about about hidden">
+        <div class="about__proposal">
+
+
+                <div class="about__proposal-title-and-descr">
+                <h1 class="about__title title">
+                  Под ключ и бесплатно:<span> <br> Лендинг, хостинг, домен</span></h1>
+
+                  <!-- 🔥 Новый подзаголовок -->
+                <!-- <p class="about__offer-subtitle"><span class="emoji-pulse">🔥</span> Получите свой лендинг (мини-сайт) без затрат на хостинг, домен и сложную настройку.</p> -->
+
+              <p class="about__descr-me">
+                  Если вы — мастер, специалист, косметолог, повар, частный фермер, репетитор, водитель или представитель другой профессии, у меня есть для вас простое и надёжное решение.
+              </p>
+
+                <a href="#" class="brand-inline brand-inline__proposal">
+                  <span class="logo__dnr">DNR</span><span class="logo__dot">.</span><span class="logo__sale">SALE</span>
+                </a>
+                </div>
+
+
+              
+
+
+              <ul class="about__benefits">
+                <li class="benefit-item">
+                  <i class="fa-solid fa-rocket"></i>
+                  <span>Быстрый старт</span>
+                </li>
+                <li class="benefit-item">
+                  <div class="benefit-item-icons-wrapper">
+                 <i class="fa-solid fa-server"></i>
+                 <!-- <i class="fa-solid fa-check-circle"></i> -->
+                  </div>
+
+
+                  <span>Надёжный хостинг с запасом по нагрузке</span>
+                </li>
+                <li class="benefit-item">
+                  <i class="fa-solid fa-chart-line"></i>
+                  <span>Бесплатное подключение Метрики</span>
+                </li>
+                <li class="benefit-item">
+                  <i class="fa-solid fa-infinity"></i>
+                  <span>Пожизненная поддержка сайта</span>
+                </li>
+                <li class="benefit-item">
+                  <i class="fa-solid fa-user-shield"></i>
+                  <span>Личная гарантия</span>
+                </li>
+
+                <li class="benefit-item about__offer-subtitle about__offer-subtitle-warning"><i class="emoji-pulse fa-solid fa-triangle-exclamation"></i>Ограничение: 1 мастер на город в каждой категории.</li>
+              </ul>
+
+
+
+
+
+
+
+              <button class="about__proposal-left-plans-btn">О проекте и условиях</button>
+
+
+        
+          <div class="about__glow-background"></div>
+
+
+
+
+        
+
+
+
+
+
+
+
         </div>
-        <div class="task-manager-form__input-text-and-btn">
-         <textarea name="text" id="textarea" placeholder="Введите описание задачи"
-         class="task-manager-form__input-textarea">Субботняя тренировка: разминка, кардио, силовые упражнения и растяжка. Улучшаем выносливость, укрепляем мышцы и заряжаемся энергией на день!</textarea>
 
-         <div class="task-manager-form__input-date">
-          <label for="date-task">Введите дэдлайн</label>
-          <input class="datetime-local-task" type="datetime-local" name="datetime-local" id="date-task" min="2024-03-08" value="2025-02-25T11:13">
-         </div>
 
-          <button class="task-manager-form__add-task">Добавить</button>
+
+
+
+          
+   
+
+
+        <!-- <h2 class="about__examples-title title">Ваши преимущества</h2>
+
+        <ul class="about__list about__your-advantages">
+          <li class="about__list-item"><strong>Хорошая подготовка</strong> — как для начинающего фронтенд-разработчика, я хорошо подготовлен. 30 часов практики еженедельно + 10 часов еженедельно — повторение и углубление в теорию.</li>
+          <li class="about__list-item"><strong>Репутация</strong> — у меня есть ценный и важный опыт общения с клиентами и работы с разными суммами: за рекламу или продажу излишков урожая. Деньги никогда не влияли на моё поведение — оплата для меня лишь часть процесса, главное — это репутация.</li> 
+
+
+        </ul> -->
+
+        <!-- <div class="about__info-warranty">Подробнее о гарантии: <button class="about__warranty-btn about__warranty-btn_small">Смотреть</button></div>
+        <div class="about__social social">
+          <div class="about__social-title">Написать мне</div>  
+          <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk"><i class="fa-brands fa-vk"></i></a>
+          <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg"><i class="fa-brands fa-telegram"></i></a>
+        </div> -->
+      </div>
+
+          <div class="main__block main__advantages advantages hidden">
+
+            <h2 class="about__subtitle title">Преимущества бесплатного лендинга</h2>
+
+            <ul class="about__list">
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-hands-helping item-advantag__img"></i>
+                <h3>Поддержка</h3>
+                Пока сайт размещён на моём хостинге — постоянная гарантия и поддержка, если что-то сломается на лендинге — чиню бесплатно.
+              </li>
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-gift item-advantag__img"></i>
+                <h3>Бесплатно всё</h3>
+                Лендинг, хостинг, красивую ссылку под вашу нишу — всё бесплатно. А также поддержку, за которую многие просят немалые деньги.
+              </li>
+
+
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-fingerprint item-advantag__img"></i>
+                <h3>Уникальность</h3>
+                Каждый лендинг оформляется с учётом специфики вашей профессии — без шаблонных решений.
+              </li>
+
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-chart-line item-advantag__img"></i>
+                <h3>Метрика Яндекса</h3>
+                Бесплатное подключение аналитики, чтобы видеть, как работает ваша страница.
+              </li>
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-edit item-advantag__img"></i>
+                <h3>Контент</h3>
+                Помогаю улучшить содержание лендинга, чтобы он был понятным и привлекательным.
+              </li>
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-gift item-advantag__img"></i>
+                <h3>Без сложностей</h3>
+                Никаких сложных условий. Просто пользуйтесь. Всё прозрачно и по-человечески.
+              </li>
+
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-cogs item-advantag__img"></i>
+                <h3>Возможности</h3>
+                Хотите фильтры, формы, AI-бота, рекламу, ещё что-то? Улучшения можно добавить по вашему желанию — за вознаграждение.
+              </li>
+
+              <li class="about__list-item item-advantag">
+                <i class="fas fa-user-shield item-advantag__img"></i>
+                <h3>Честный подход</h3>
+                Нет скрытых условий. Только взаимная выгода и прозрачность в сотрудничестве.
+              </li>
+
+            </ul>
+
+            <!-- <div class="about__info-warranty">Подробнее про гарантию и бонус: <button class="about__warranty-btn about__warranty-btn_small">Смотреть</button></div> -->
+            <div class="about__social social">
+              <div class="social-title">Написать:</div>  
+              <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk">ВКонтакте   
+                <!-- <i class="fa-brands fa-vk"></i> -->
+              </a>
+              <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg">Telegram
+                <!-- <i class="fa-brands fa-telegram"></i> -->
+              </a>
+            </div>
+          </div>
+    
+        
+        
+
+      <!-- Блок примеров -->
+       <div class="main__block main__practice practice hidden">
+
+          <h2 class="practice__title">Макеты, которые можно взять за прототип</h2>
+          
+          <p class="practice__descr">
+              Прототипы можно кардинально изменить под вашу услугу/товар/проект: от визуального настроения и подачи информации до логики взаимодействия с посетителем.
+          </p>
+          
+  
+        <div class="practice__wrapper wrapper-cards-practice">
+
+
+
+        <div class="template-card" data-prof="cosmitolog-mironova">
+          <div class="template-card__preview template-card__preview-1"></div>
+          <div class="template-card__content">
+            <h3 class="template-card__title">Сайт для косметолога</h3>
+            <p class="template-card__desc">
+              Красивая и понятная презентация услуг: уход за кожей, портфолио процедур, прайс и быстрая запись — всё на одном сайте.
+            </p>
+
+            <!-- <p class="template-card__note">
+              Шаблон можно кардинально изменить под вашу услугу/товар/проект: цвета, блоки, структуру. Получится не просто сайт — а ваш личный инструмент для привлечения клиентов.
+              Красивая и понятная презентация услуг: уход за кожей, портфолио процедур, прайс и быстрая запись — всё на одном сайте.
+            </p> -->
+
+            <button class="template-card__button">Посмотреть на сайт</button>
+          </div>
+        </div>
+
+
+        <div class="fullscreen-preview fullscreen-preview-cosmitolog-mironova" >
+          <button class="fullscreen-preview__close">&times;</button>
+          <img src="img/practic/casmitolog-alisa-mironova.png" alt="Скрин сайта" class="fullscreen-preview__img" id="fullscreenImage">
+        </div>
+
+
+
+
+
+
+        </div>
+
+                  <p class="practice__descr practice__subdescr">Я создам лендинг, который будет чувствоваться именно вашим — с нужными акцентами, понятной навигацией и оформлением, вызывающим доверие. Получится не просто сайт — а ваш личный инструмент для привлечения клиентов.
+          </p>
+
+              <div class="practice__social social">
+              <div class="social-title">Написать:</div>  
+              <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk">ВКонтакте   
+                <!-- <i class="fa-brands fa-vk"></i> -->
+              </a>
+              <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg">Telegram
+                <!-- <i class="fa-brands fa-telegram"></i> -->
+              </a>
+            </div>
+       </div>
+
+       <div class="main__block main__warranty warranty hidden">
+        <div class="container">
+          <h2 class="warranty__title">Моя личная гарантия</h2>
+      
+          <div class="warranty__personal">
+            <p class="warranty__subtitle">
+                Ваш лендинг — часть моего проекта, и я заинтересован в его надёжной работе. Именно поэтому я даю личную гарантию и стремлюсь создать продукт, который будет полезен вам и удобен вашим клиентам. <br><br>
+                
+                Перед началом работы я предоставляю подробный письменный неофициальный договор, в котором чётко указано: что именно я должен выполнять, что входит в гарантию, поддержку сайта, а за что я не несу ответственности.</p>
+            
+          </div>
+      
+          <!-- Вопрос-ответ -->
+          <div class="warranty__faq">
+            <h2 class="warranty__faq-title">Подробнее по пунктам и вопросам</h2>
+            <div class="warranty__faq-item">
+              1. Исправление ошибок <i class="fa-solid fa-arrow-down"></i>
+              <div class="warranty__answer">
+
+                <p><strong>Если сайт размещён на моём хостинге</strong> — действует постоянная поддержка: любые ошибки, возникшие по моей вине, я устраняю бесплатно и без ограничений по срокам, пока сайт остаётся на моём хостинге.</p> <br>
+
+                <p><strong>Если сайт размещён на вашем хостинге</strong> — гарантия на исправление ошибок по моей вине действует в течение <strong>30 дней</strong> с момента передачи проекта. После этого поддержка возможна по отдельной договорённости.</p> <br>
+
+                <p>Если по какой-то причине я не могу устранить ошибку в оговорённый срок (например, нахожусь в отпуске, на больничном и т.д.), мы обсудим вопрос компенсации. Все детали и сроки всегда заранее проговариваются перед началом проекта.</p>
+
+              </div>
+            </div>
+
+      
+            <!-- <div class="warranty__faq-item">
+              2. Поддержка и ответы на вопросы <i class="fa-solid fa-arrow-down"></i>
+              <div class="warranty__answer">
+                В течении действия личной гарантии после сдачи проекта я на связи 5 дней в неделю(будни), отвечаю на вопросы и помогаю разобраться в работе функционала.
+              </div>
+            </div> -->
+
+            <div class="warranty__faq-item">
+                2. Техническая документация<i class="fa-solid fa-arrow-down"></i>
+              <div class="warranty__answer">
+                Если вы заказали доп.услугу. После завершения проекта я предоставляю техническую документацию: структура, файлы, рекомендации — если вам это требуется, например вы перенесли сайт на свой хостинг.
+                <!-- <div class="warranty__doc-download">
+                  <a href="docs/project-doc-example.pdf" download class="warranty__doc-link">
+                    📎 Скачать пример документации (PDF)
+                  </a>
+                </div> -->
+              </div>
+            </div>
+      
+            <div class="warranty__faq-item">
+                3. Установка и запуск проекта <i class="fa-solid fa-arrow-down"></i>
+              <div class="warranty__answer">
+                Если нужно перенести сайт на ваш хостинг, домен. Подготовлю файлы, загружу на платформу, проверю работоспособность. Также помогу выбрать домен, хостинг. Всё, для полного запуска сайта.
+              </div>
+            </div>
+
+            <div class="warranty__faq-item">
+                4. Что нужно для заказа? <i class="fa-solid fa-arrow-down"></i>
+            <div class="warranty__answer">
+
+              <h3>1. Бесплатный лендинг</h3>
+              <p>Чтобы я мог начать работу, нужно совсем немного:</p>
+              <ul>
+                <li><strong>Понимание цели</strong> — например: привлечь клиентов, получать заявки, рассказать о себе или услуге.</li>
+                <li><strong>Желательно подготовить фото</strong> — логотип, ваши фотографии или примеры работ. Если у вас их нет — подберу качественные изображения по вашей теме, но тогда может потребоваться небольшая доплата за дополнительное время.</li>
+                <li><strong>Связь в Telegram</strong> — в течение 1–2 дней после начала я могу задавать уточняющие вопросы. Главное — быть на связи.</li>
+              </ul>
+              <p>Ничего сложного — всё максимально просто. Главное — желание и немного информации.</p>
+
+              <hr style="margin: 2.5rem 0; border: none; border-top: 1px solid #3a71af55;">
+
+              <h3>2. Индивидуальный заказ</h3>
+              <p>Если вы хотите не просто базовый лендинг, а расширенный проект с конкретной структурой или функциями — нужно немного больше:</p>
+              <ul>
+                <li><strong>Техническое задание (если есть)</strong> — что должно быть на сайте, какие блоки, формы, кнопки и т.д. Если ТЗ нет — я помогу всё оформить в процессе.</li>
+                <li><strong>Всё, что указано выше для бесплатного варианта</strong>: цель, материалы, связь.</li>
+              </ul>
+              <p>Такой подход даёт больше гибкости, позволяет настроить сайт точно под ваши задачи, и сделать его максимально эффективным.</p>
+
+              <div class="warranty__faq-item-social social">
+                <div class="warranty__faq-item-social-title">Написать мне:</div>
+                <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk"><i class="fa-brands fa-vk"></i></a>
+                <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg"><i class="fa-brands fa-telegram"></i></a>
+              </div>
+
+            </div>
+
+        
+            </div>
+            
+            
+      
+            <div class="warranty__faq-item">
+              5. Соответствие техническому заданию <i class="fa-solid fa-arrow-down"></i>
+
+              <div class="warranty__answer">
+                Все работы выполняются строго по заранее согласованному плану — даже если у вас нет полноценного технического задания (ТЗ).  
+                <br><br>
+                В случае <strong>бесплатного лендинга</strong> — достаточно, чтобы мы вместе обсудили структуру и ключевые моменты. После этого я чётко следую договорённому плану.
+                <br><br>
+                Если вы хотите <strong>доработать или расширить проект</strong>, то мы либо используем готовое ТЗ (если оно есть), либо я сам помогу его составить на основе вашего запроса. Все работы по расширенному проекту также выполняются строго по этому документу.
+              </div>
+            </div>
+
+      
+            <div class="warranty__faq-item">
+                6. Гарантия стабильной работы <i class="fa-solid fa-arrow-down"></i>
+              <div class="warranty__answer">
+                В случаи переноса сайта на ваш хостинг. Реализованный функционал будет стабильно работать при сохранении изначальной среды (браузеры, CMS, хостинг и т.д.).
+              </div>
+            </div>
+      
+            <div class="warranty__faq-item">
+                7. Конфиденциальность <i class="fa-solid fa-arrow-down"></i>
+
+              <div class="warranty__answer">
+                Все материалы, доступы(если требуется) и переписка не передаются третьим лицам. Уважение к вашей информации — мой приоритет.
+              </div>
+            </div>
+      
+            <div class="warranty__faq-item">
+                8. Контроль процесса создания <i class="fa-solid fa-arrow-down"></i>
+
+              <div class="warranty__answer">
+                Я использую систему контроля версий Git и выкладываю работу в репозиторий на GitHub. Вы в любой момент можете посмотреть, что сделано, когда и с какими правками. Прозрачный процесс разработки без затягивания сроков, лишних обещаний и неожиданных "сюрпризов".
+              </div>
+            </div>
+      
+            <div class="warranty__faq-item">
+                9. Ответственность за сроки <i class="fa-solid fa-arrow-down"></i>
+              <div class="warranty__answer">
+                Если вы хотите <strong>доработать или расширить проект</strong>. В случае задержки по моей вине — я верну до 20% от вознаграждения за моих услуги (при условии, если у вас нет уже какой-то другой скидки). Мне важно соблюдать договорённости.
+              </div>
+            </div>
+      
+            <div class="warranty__faq-item">
+                10. Гибкость по доработкам <i class="fa-solid fa-arrow-down"></i>
+
+              <div class="warranty__answer">
+                Небольшие правки(до 2 часов рабочего времени) после сдачи проекта — бесплатно.(в течении 7 дней после сдачи проекта). 
+              </div>
+            </div>
+
+            <div class="warranty__faq-item">
+                11. Вознаграждение <i class="fa-solid fa-arrow-down"></i>
+
+              <div class="warranty__answer">
+                Если требуется что-то большее, чем базовый лендинг. Я работаю поэтапно: <strong>вознаграждение  — за выполненную часть работы</strong>. 
+                <br><br>
+                Даже если лендинг создаётся одну неделю, я разделяю его на логичные этапы (например: вёрстка главного экрана, базовая структура, адаптив, формы и т.д.) и показываю результат по ходу. Вы оплачиваете только то, что уже сделано и утверждено.  
+                <br><br>
+                Такой подход защищает и меня, и вас: вы видите прогресс и контролируете результат, а я уверен, что мои усилия не пропадут зря, если вдруг Ваши планы поменяются.
+              </div>
+            </div>
+
+            
+                        <div class="warranty__faq-item">
+              12. Важно знать <i class="fa-solid fa-arrow-down"></i>
+
+            <div class="warranty__answer">
+
+              <h3>1. Бесплатный лендинг на моём хостинге</h3>
+              <ul>
+                <li>Я сам отвечаю за размещение и техническую часть. Если что-то ломается — быстро исправляю и стараюсь сделать так, чтобы вы этого даже не заметили.</li>
+                <li>Иногда возможны сбои, которые не зависят от меня — например, временные проблемы на стороне хостинга, неполадки со шрифтами или иконками, подключёнными из внешних сервисов. В таких случаях я прикладываю максимум усилий, чтобы всё вернуть в норму как можно быстрее.</li>
+              </ul>
+
+              <hr style="margin: 2.5rem 0; border: none; border-top: 1px solid #3a71af55;">
+
+              <h3>2. Индивидуальный сайт на вашем хостинге</h3>
+              <ul>
+                <li>После завершения проекта и передачи всех файлов я не несу ответственности за работу сайта, если он размещён на вашем хостинге.</li>
+                <li>Я не могу контролировать сбои, обновления браузеров, сторонние API, хостинг-платформы или внешний контент (например, шрифты, иконки), поэтому стабильность в этих вопросах находится на вашей стороне.</li>
+                <li>В случае серьёзных изменений вы всегда можете обратиться ко мне — по договорённости я помогу всё восстановить.</li>
+              </ul>
+
+            </div>
+
+          </div>
+            
+            
+
+          </div>
+        </div>
+
+            <div class="warranty__social social">
+              <div class="social-title">Написать:</div>  
+              <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk">ВКонтакте   
+                <!-- <i class="fa-brands fa-vk"></i> -->
+              </a>
+              <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg">Telegram
+                <!-- <i class="fa-brands fa-telegram"></i> -->
+              </a>
+            </div>
+      </div>
+      
+      <div class="main__block main__prices prices hidden">
+        <div class="container">
+     <!-- <h2 class="prices__title">Варианты реализации</h2> -->
+
+           <h2 class="prices__subtitle">Варианты</h2>
+     <div class="prices__variants">
+      <!-- Карточки -->
+<div class="prices__variants-item variants-item variants-item-free">
+  <div class="variants-item__header">
+    <p class="variants-item__title">
+      Бесплатно: что доступно
+    </p>
+  </div>
+  <div>
+    <ul class="variants-item__lists">
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>Макет сайта (адаптирован под вашу нишу)</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>До 7 блоков (главный экран, услуги-товары, преимущества, цены, отзывы, контакты - можно заменить/убрать )</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>До 15 МБ — общий вес всех файлов сайта</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p> Допустимая нагрузка до 200 посетителей в сутки (для малого бизнеса это достаточно, но можно увеличить при необходимости)</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>Легкий слайдер до 5-ти блоков</p>
+      </li>
+
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>Плавная анимация появления блоков и hover-эффекты</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>Подключение Яндекс.Метрики</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>Минимальная SEO-структура (заголовки, мета, alt)</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>Домен на платформе и надёжный хостинг</p>
+      </li>
+
+      <li class="variants-item__list">
+        <span>
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <p>Техническая поддержка и пожизненная гарантия(без правок по запросу)</p>
+      </li>
+
+        <li class="variants-item__list">
+        <span class="color-red">
+          <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 18L18 6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <p>Всё, что в "Индивидуально", — недоступно.</p>
+      </li>
+
+    </ul>
+  </div>
+  <!-- <a href="https://vk.com/o_chernov_a" target="_blank" class="variants-item__button-container">
+    <button type="button">
+      Написать
+    </button>
+  </a> -->
+</div>
+
+
+
+<div class="prices__variants-item variants-item">
+  <div class="variants-item__header">
+    <p class="variants-item__title">
+      Индивидуально
+    </p>
+  </div>
+
+  
+
+  <ul class="variants-item__lists">
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>До 60 МБ — общий вес всех файлов сайта</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Любая структура: фильтры товаров/услуг, формы, калькуляторы и прочее</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Нагрузка до 3000 посетителей в сутки (и выше — по запросу)</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Приоритетная поддержка и обновления</p>
+    </li>
+
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Индивидуальный дизайн по вашему макету</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Telegram-бот для приёма заявок</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>AI-бот для общения с клиентами</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Реклама во ВКонтакте, Яндекс</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Креативы с ChatGPT-4o и Midjourney</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Перенос лендинга на ваш хостинг и домен</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Запрос на изменения текста, фото(в течении 30 дней бесплатно)</p>
+    </li>
+
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Создание сайта под ключ</p>
+    </li>
+
+        <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Создание корпоративного сайта</p>
+    </li>
+    <li class="variants-item__list">
+      <span>
+        <svg aria-hidden="true" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 12.75l6 6 9-13.5" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <p>Уникальные пожелания</p>
+    </li>
+  </ul>
+
+  <!-- <a href="https://vk.com/o_chernov_a" target="_blank" class="variants-item__button-container">
+    <button type="button">
+      Написать
+    </button>
+  </a> -->
+</div>
+
+
+
+
+     </div>
+
+
+        <h2 class="prices__subtitle">Если нужен индивидуальный подход</h2>
+          <ul class="prices__benefits">
+
+            <li class="prices-benefit-item">
+              <i class="fa-solid fa-wallet"></i>
+              <span>Вознаграждение по этапам — только за выполненную часть</span>
+            </li>
+
+            <li class="prices-benefit-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub-репозиторий — контроль проекта в реальном времени</span>
+            </li>
+
+            <li class="prices-benefit-item">
+              <i class="fa-solid fa-scale-balanced"></i>
+              <span>Честный подход: при задержке возможен возврат до 20%</span>
+            </li>
+
+            <li class="prices-benefit-item">
+              <i class="fa-solid fa-flag-checkered"></i>
+              <span>Работа доводится до результата без пересмотра условий</span>
+            </li>
+
+          </ul>
+
+         <div class="price__social social">
+        <div class="social-title">Написать:</div>  
+        <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk">
+          <i class="fa-brands fa-vk"></i>  ВКонтакте
+        </a>
+        <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg">
+          <i class="fa-brands fa-telegram"></i>  Telegram
+        </a>
+      </div>
+
+
+
+
+            </div>
+          </div>
+
+      <div class="main__block main__conditions conditions">
+      <div class="conditions__intro conditions__intro--preview">
+      <p class="conditions__intro-descr">
+        <span class="brand-inline">
+          <span class="logo__dnr">DNR</span><span class="logo__dot">.</span><span class="logo__sale">SALE</span>
+        </span>
+        <span class="typewriter-text typing typewriter"></span>
+      </p>
+
+
+      </div>
+
+
+        <div class="conditions__container">
+
+                  <h2 class="conditions__title title">О проекте и условиях использования</h2>
+        <div class="conditions__descr-split">
+
+          <div class="conditions__descr-card conditions__descr-executors">
+            <h3>Для исполнителей</h3>
+            <p>Платформа <span class="brand-platform"><span class="brand-platform__orange">dnr</span><span class="brand-platform__blue">.sale</span></span> создана как инициатива по поддержке частных специалистов: мастеров, фермеров, репетиторов, ремесленников. Бесплатно создам и размещу лендинг на надёжном хостинге. Всё необходимое для запуска и работы уже включено — от настройки до постоянной поддержки.</p>
+            <p>Проект не является зарегистрированной коммерческой организацией. Бесплатные услуги оказываются на добровольной основе, а платные улучшения — по частной договорённости.</p>
+          </div>
+
+          <div class="conditions__descr-card conditions__descr-clients">
+            <h3>Для клиентов</h3>
+            <p>Платформа <span class="brand-platform"><span class="brand-platform__orange">dnr</span><span class="brand-platform__blue">.sale</span></span>  отбирает только надёжных и ответственных специалистов. Я лично проверяю каждого, прежде чем запустить лендинг. В будущем появится каталог исполнителей — вы сможете выбрать подходящего по категории, городу и отзывам.</p>
+          </div>
+
+          <blockquote class="conditions__descr-warning">
+            <strong>Важно:</strong> Платформа не несёт ответственности за действия исполнителей, размещённых на сайте. Все исполнители действуют от своего имени и несут личную ответственность перед своими клиентами.
+          </blockquote>
+
+        </div>
+
+
+
+        <h3 class="conditions__subtitle title">Цель на ближайшее время</h3>
+        <div class="conditions__purpose">
+          <p class="conditions__purpose-descr">
+            На текущем этапе платформа находится в стадии формирования структуры и сбора первых участников. 
+            Чтобы обеспечить качество, я ограничиваю количество исполнителей: <strong>по одному мастеру в каждой категории в одном городе</strong>. 
+            Это позволяет лучше поддерживать связь, делать качественный лендинг и избежать конкуренции между участниками.
+          </p>
+          <p class="conditions__purpose-subdescr">
+            В будущем формат может измениться, но сейчас доступ к бесплатному лендингу — это <strong>возможность быть в числе первых</strong>.
+          </p>
+        </div>
+
+
+
+
+            <h2 class="conditions__subtitle title">Условия бесплатного размещения</h2>
+            <ul class="conditions__list">
+
+              <li class="conditions__list-item item-conditions">
+                <i class="fas fa-seedling"></i>
+                <h3>Желание развиваться</h3>
+                <p>Я с удовольствием помогу тем, для кого лендинг — это инструмент для развития, а не просто "галочка". Вложенное время должно приносить пользу обеим сторонам.</p>
+              </li>
+
+              <li class="conditions__list-item item-conditions">
+                <i class="fas fa-handshake"></i>
+                <h3>Честность к клиентам</h3>
+                <p>Люди, которым вы даёте услугу или товар, формируют мнение о платформе  <span class="brand-platform"><span class="brand-platform__orange">dnr</span><span class="brand-platform__blue">.sale</span></span> . Честная работа укрепляет доверие.</p>
+              </li>
+
+              <li class="conditions__list-item item-conditions">
+                <i class="fas fa-comment-alt"></i>
+                <h3>Короткий отзыв</h3>
+               <p>Честный отзыв о сотрудничестве со мной поможет другим лучше понять, как устроена платформа. Это важный вклад в её развитие и доверие со стороны новых участников.</p>
+              </li>
+
+              <li class="conditions__list-item item-conditions">
+                <i class="fas fa-link"></i>
+                <p>В самом низу вашего лендинга — под футером — будет размещён небольшой, ненавязчивый блок с информацией о платформе.  
+                <br>— ссылка на главную страницу проекта  
+                <br>— кнопка «Пожаловаться» или «Оставить отзыв»  
+                <br><br>
+                Блок не будет выделяться визуально и не отвлечёт посетителей, но обеспечит прозрачность и возможность обратной связи. Все обращения рассматриваются адекватно, чтобы избежать клеветы и недоразумений.</p>
+
+
+              </li>
+
+            </ul>
+
+            <h2 class="conditions__subtitle title">Условия для приостановки/отказа от сотрудничества</h2>
+
+            <ul class="conditions__list">
+
+              <li class="conditions__list-item item-conditions item-conditions--refuse">
+                <i class="fas fa-user-slash"></i>
+                <h3>Подтверждённая жалоба</h3>
+                <p>Если от клиента поступает обоснованная жалоба — связанная с обманом, грубостью или неоказанной услугой — сотрудничество может быть приостановлено или прекращено.</p>
+              </li>
+
+              <li class="conditions__list-item item-conditions item-conditions--refuse">
+                <i class="fas fa-calendar-times"></i>
+                <h3>Полная неактивность</h3>
+                <p>Если лендинг не посещается или не используется более 6 месяцев подряд, он может быть снят с публикации.</p>
+              </li>
+
+              <li class="conditions__list-item item-conditions item-conditions--refuse">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Публичное неуважение</h3>
+                <p>Публичные оскорбления, клевета или фейковые обвинения в сторону проекта <span class="brand-platform"><span class="brand-platform__orange">dnr</span><span class="brand-platform__blue">.sale</span></span>  считаются нарушением базовой этики и могут привести к прекращению сотрудничества.</p>
+              </li>
+
+            </ul>
+
+              <div class="conditions__social social">
+              <div class="social-title">Написать:</div>  
+              <a href="https://vk.com/o_chernov_a" target="_blank" class="contacts__social-vk">ВКонтакте   
+                <!-- <i class="fa-brands fa-vk"></i> -->
+              </a>
+              <a href="https://t.me/o_chernov_a" target="_blank" class="contacts__social-tg">Telegram
+                <!-- <i class="fa-brands fa-telegram"></i> -->
+              </a>
+            </div>
+
+        </div>
+
+
+
+
+      </div>
+
+
+      
+      <div class="main__block main__contacts contacts hidden">
+        <div class="contacts__wrapper">
+          <div class="contacts__block">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__text">Вы можете связаться со мной удобным для вас способом:</p>
+        
+            <ul class="contacts__list">
+              <li class="contacts__list-item">
+                <strong>Telegram:</strong> <a href="https://t.me/o_chernov_a" target="_blank">https://t.me/o_chernov_a</a>
+              </li>
+              <li class="contacts__list-item">
+                <strong>ВКонтакте:</strong> <a href="https://vk.com/o_chernov_a" target="_blank">https://vk.com/o_chernov_a</a>
+              </li>
+              <li class="contacts__list-item">
+                <strong>Email:</strong> <a href="mailto:chernovoleg721@yandex.ru">chernovoleg721@yandex.ru</a>
+              </li>
+            </ul>
+        
+            <p class="contacts__note">Отвечаю на сообщения с <strong>8:00 до 18:00</strong>, кроме выходных.</p>
+          </div>
         </div>
 
       </div>
       
-  </div>
-  <div class="task-manager-tabs task-tabs">
-    <div class="task-tabs__delete tab-item" data-tasktab="2">Удалённые задачи</div>
-    <div class="task-tabs__active tab-item tab__active" data-tasktab="1">Активные задачи</div>
-  </div>
-  <div class="task-manager-cont task-manager-container-1">
-    <div class="taskIsNot">Пока нет задач.</div>
-    <!-- <div class="task-manager__container-item task-item">
-      <div class="task-item__head">
-        <div class="task-item__head-title"><span> Задача 1:</span> Обучение 7 часов</div>
-        <div class="task-item__head-timer">Осталось  <span>1</span> дней, <span>23</span> часов, <span>15</span> мин, <span>35</span> сек</div>
-        <button class="task-item__head-btn">удалить задачу</button>
-      </div>
-      <div class="task-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus sunt aliquid molestiae porro itaque ipsum et aut tempora quas iste dignissimos deserunt laboriosam dolor, architecto necessitatibus. Distinctio, blanditiis sapiente.</div>
-    </div> -->
-    
-
-  </div>
-  <div class="task-manager-cont task-manager-container-2 hidden">
-    <div class="taskIsNot">Пока нет задач.</div>
-    <!-- <div class="task-manager__container-item task-item">
-      <div class="task-item__head">
-        <div class="task-item__head-title"><span> Задача 1:</span> Обучение 7 часов</div>
-        <div class="task-item__head-timer">Осталось  <span>1</span> дней, <span>23</span> часов, <span>15</span> мин, <span>35</span> сек</div>
-      </div>
-      <div class="task-item__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus natus sunt aliquid molestiae porro itaque ipsum et aut tempora quas iste dignissimos deserunt laboriosam dolor, architecto necessitatibus. Distinctio, blanditiis sapiente.</div>
-    </div> -->
-    
-
-  </div>
-   </div>
+    </div>
 
 
+
+</section>
+
+  <div class="wave-diagonal-background">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+      <path class="wave wave-1" d="M0,800 C300,700 700,900 1440,600" />
+      <path class="wave wave-2" d="M0,850 C400,750 800,950 1440,650" />
+      <path class="wave wave-3" d="M0,900 C500,800 900,1000 1440,700" />
+    </svg>
+  </div>
+
+  
 </body>
 </html>
